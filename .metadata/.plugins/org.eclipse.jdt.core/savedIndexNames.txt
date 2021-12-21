@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\.metadata\.plugins\org.eclipse.jdt.core
+685898874.index
+1865797976.index
+924214395.index
