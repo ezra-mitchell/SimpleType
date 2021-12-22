@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\typing-test\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,10 +26,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.afs.ezra.simpleType"/>
 		</list>
 		<list key="groupId">
+			<item value="com.afs.ezra"/>
 		</list>
 		<list key="artifactId">
+			<item value="simpleType"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,13 +48,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.afs.ezra"/>
 		</list>
 		<list key="name">
-			<item value="typing-test"/>
 		</list>
 		<list key="artifactId">
-			<item value="typing-test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
