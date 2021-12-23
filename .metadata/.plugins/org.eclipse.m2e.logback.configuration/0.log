@@ -7591,3 +7591,231 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact jstl:jstl:jar
 2021-12-22 13:29:33,068 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2021-12-22 13:29:39,221 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-12-22 13:29:39,221 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:29:39,223 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:29:39,223 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:32:58,609 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:32:58,611 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:32:58,612 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:32:58,612 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:33:17,583 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:17,584 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:33:17,585 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:17,585 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:33:26,706 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:26,707 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:33:26,708 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:26,708 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:33:56,212 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:56,212 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:33:56,213 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:33:56,213 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:35:03,112 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:35:03,112 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:35:03,114 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:35:03,114 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:37:44,112 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:37:44,112 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:37:44,113 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:37:44,113 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:38:07,934 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:07,936 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:38:07,940 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:07,940 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:38:26,292 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:26,293 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:38:26,294 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:26,294 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:38:41,182 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:41,184 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:38:41,187 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:38:41,187 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:44:16,307 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:16,308 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:44:16,308 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:16,309 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:44:40,587 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:40,587 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:44:40,588 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:40,588 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:44:52,561 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:52,561 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:44:52,562 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:52,562 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:44:55,775 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:55,775 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:44:55,776 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:44:55,777 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:45:10,824 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:10,824 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:45:10,825 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:10,825 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:45:17,945 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:17,946 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:45:17,947 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:17,948 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:45:18,963 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:18,963 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:45:18,964 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:18,964 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:45:46,332 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:46,332 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:45:46,333 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:45:46,334 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:46:06,674 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:46:06,675 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:46:06,676 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:46:06,676 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:47:42,890 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:47:42,890 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:47:42,892 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:47:42,892 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:48:34,703 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:48:34,704 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:48:34,705 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:48:34,706 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:52:39,767 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:52:39,769 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:52:39,771 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:52:39,773 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:53:17,560 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:17,561 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:53:17,561 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:17,561 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:53:27,262 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:27,262 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:53:27,262 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:27,263 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:53:32,817 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:32,817 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:53:32,818 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:53:32,818 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:55:05,569 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:55:05,569 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:55:05,571 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:55:05,571 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:55:41,354 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:55:41,354 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:55:41,355 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:55:41,355 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:56:24,114 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:56:24,114 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:56:24,115 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:56:24,115 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:56:28,209 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:56:28,209 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:56:28,210 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:56:28,210 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:57:05,752 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:57:05,753 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:57:05,754 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:57:05,754 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:57:43,816 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:57:43,817 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:57:43,817 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:57:43,817 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:58:08,461 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:08,461 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:58:08,463 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:08,463 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:58:10,522 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:10,523 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:58:10,523 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:10,523 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:58:36,030 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:36,030 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:58:36,031 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:36,031 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:58:39,833 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:39,833 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:58:39,834 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:39,834 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 13:58:42,036 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:42,036 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 13:58:42,037 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 13:58:42,037 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:03:37,517 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:03:37,517 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:03:37,518 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:03:37,518 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:03:43,879 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:03:43,879 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:03:43,879 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:03:43,880 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:04:02,323 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:04:02,323 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:04:02,324 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:04:02,324 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:14:18,953 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:14:18,954 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:14:18,954 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:14:18,954 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:15:38,716 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:15:38,716 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:15:38,717 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:15:38,717 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:15:41,677 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:15:41,677 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:15:41,678 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:15:41,678 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:16:41,359 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:16:41,359 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:16:41,360 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:16:41,360 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:28:37,066 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:28:37,067 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:28:37,067 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:28:37,067 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:28:52,441 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:28:52,441 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:28:52,442 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:28:52,442 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:30:35,740 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:30:35,740 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:30:35,741 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:30:35,741 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:31:45,132 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:31:45,133 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:31:45,133 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:31:45,134 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:32:08,823 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:32:08,824 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:32:08,824 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:32:08,825 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:32:11,413 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:32:11,413 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:32:11,414 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:32:11,414 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:34:07,335 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:34:07,336 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:34:07,336 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:34:07,336 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:36:18,419 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:36:18,419 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:36:18,420 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:36:18,420 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:36:22,837 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:36:22,838 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:36:22,839 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:36:22,840 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:37:05,066 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:37:05,067 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:37:05,067 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:37:05,067 [Worker-45: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:38:15,076 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:38:15,076 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:38:15,077 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:38:15,077 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:46:29,757 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:29,758 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:46:29,758 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:29,758 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:46:47,590 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:47,590 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:46:47,591 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:47,591 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:46:59,020 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:59,020 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources
+2021-12-22 14:46:59,021 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:46:59,021 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\test\resources
+2021-12-22 14:47:08,877 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-22 14:47:08,877 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ezra.mitchell\Documents\code\new-joiner-workspace\simpleType\src\main\resources

@@ -9,12 +9,12 @@ public class HomeController {
 
 	@GetMapping("/")
 	public ModelAndView homeRedirect() {
-		return new ModelAndView("redirect:/home");
+		return new ModelAndView("redirect:/typing-test/root");
 	}
 	
 	
 	@GetMapping("/home")
 	public ModelAndView home() {
-		return new ModelAndView("home");
+		return new ModelAndView("typing-test/root");
 	}
 }
