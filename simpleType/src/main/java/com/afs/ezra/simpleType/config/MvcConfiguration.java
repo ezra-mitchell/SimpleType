@@ -18,7 +18,7 @@ public class MvcConfiguration implements WebMvcConfigurer {
 
 	@Bean
 	public ViewResolver viewResolver() {
-		ViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/jsp/", ".jsp");
+		ViewResolver resolver = new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
 		return resolver;
 	}
 
