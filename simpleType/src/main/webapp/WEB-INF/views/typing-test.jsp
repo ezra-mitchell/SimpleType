@@ -7,21 +7,23 @@
 <script src="/resources/angular.min.js"></script>
 <script src="/resources/controllers/typing-test.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
+<!-- I know its best practice to have this in a separate file this is just convenient while the HTML file is small -->
 <style>
 .correct {
-	color: rgb(0, 255, 0);
+	color: var(--c-pink-dark);
 }
 
 .error {
-	color: red;
+	color: var(--c-gray);
 }
 
 .notTyped {
-	color: gray !important;
+	color: var(--c-tan-light) !important;
 }
 
 .typing-pane {
 	margin-left: auto;
+	font-size: 1.5em;
 }
 
 *:focus {
@@ -33,11 +35,54 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding: 2em;
 }
 
 .sub-text {
-	color: blue;
+	color: var(--c-orange);
 	font-size: 0.7em;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.author {
+	color: var(--c-tan-light) !important;
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+}
+
+input {
+	width: 200px;
+	border-radius: 5px;
+	background-color: var(--c-tan-light);
+	color: var(--c-pink-dark);
+	border: none;
+	padding: 0.5em;
+	transition: width 0.1s ease-in-out;
+}
+
+input::placeholder {
+	color: var(--c-pink-light);
+}
+
+.closed {
+	width: 0;										
+	visibility: hidden;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover{
+	background-color: var(--c-red-dark);
 }
 </style>
 </head>
@@ -52,16 +97,18 @@
 				tabindex="-1" autofocus>
 				<span ng-repeat="charObj in text" ng-class="charObj.class">{{charObj.character}}</span>
 			</div>
+			<p class="author" align="right">{{author}}</p>
+
+			<p class="sub-text" ng-click="getTest()">Shift Tab for new test</p>
+
 			<form action="/post-leaderboard" method="post">
-				<label for="name" ng-if-start="finished === true">Name:</label> <input
-					type="text" name="name" required id="name"> <label
-					for="age">Age:</label> <input type="number" name="age" id="age">
-				<input type="hidden" name="text[]" value="{{text}}"> <input
-					type="hidden" name="errors[]" value="{{errors}}"> <input
-					type="submit" value="Submit to leaderboard" ng-if-end>
+				<input type="text" name="name" required id="name" placeholder="Name" ng-class="{closed: finished === false}">
+				<input type="number" name="age" id="age" placeholder="Age" ng-class="{closed: finished === false}">
+				<input type="hidden" name="text[]" value="{{text}}" ng-if-start="finished === true"> 
+				<input type="hidden" name="errors[]" value="{{errors}}" ng-if-end> 
+				<input type="submit" value="Submit to leaderboard" ng-class="{closed: finished === false}">
 			</form>
-			
-			<p class="sub-text">Shift Tab for new test</p>
+
 		</div>
 	</div>
 

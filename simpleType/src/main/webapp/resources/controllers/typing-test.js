@@ -9,6 +9,7 @@ module.controller("TypingTestController", function($scope, $http) {
 	$scope.finished = false;
 	$scope.interval = undefined;
 	$scope.errors = []; // { character: '', typed, '', timeTyped: undefined }
+	$scope.author = "";
 
 	$scope.onKeyPress = function(e) {
 		let charTyped = e.key;
@@ -83,6 +84,7 @@ module.controller("TypingTestController", function($scope, $http) {
 			for (let c of res.data.content) {
 				$scope.text.push({ character: c, typed: "", timeTyped: undefined, class: 'notTyped', extra: false });
 			}
+			$scope.author = res.data.author;
 		})
 	};
 });
