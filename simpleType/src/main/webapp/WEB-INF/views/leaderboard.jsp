@@ -24,17 +24,53 @@ h1, h2, h3, h4, h5 {
 }
 
 th {
-	color: var(--c-orange);
+	color: var(--c-tan-light);
 }
 
 td {
-	color: var(--c-tan-light);
+	color: var(--c-pink-dark);
+}
+
+th, td {
+	padding: 0.2em
 }
 
 a {
 	color: var(--c-blue);
 	font-size: 0.7em;
 }
+
+table {
+	border-collapse: collapse;
+	border-radius: 5px;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 0.2em;
+    overflow: hidden;
+}
+
+thead {
+	text-align: left;
+	background-color: var(--c-blue);
+	border-radius: 5px;
+}
+
+
+tbody tr{
+	border-bottom: 1px solid #dddddd;	
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: var(--c-tan);
+}
+
+tbody tr:last-of-type {
+	border-bottop: 2px solid var(--c-blue)
+}
+
 </style>
 
 </head>

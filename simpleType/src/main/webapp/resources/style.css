@@ -11,7 +11,7 @@ html, body {
 	--c-orange: #e86252;
 	--c-pink-dark: #ee2677;
 	--c-pink-light: #e87ea1;
-	--c-tan: #ebb3a9;
+	--c-tan: #ECE7BC;
 	--c-tan-light: #eeebd0;
 	--c-gray: #685f74;
 	--c-blue: #4f7cac;
@@ -20,5 +20,6 @@ html, body {
 }
 
 body {
-	background-color: var(--c-tan);
+	background-color: var(--c-tan-light);
+	font-size: 130%;
 }

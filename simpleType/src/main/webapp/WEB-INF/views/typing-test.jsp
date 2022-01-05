@@ -14,11 +14,11 @@
 }
 
 .error {
-	color: var(--c-gray);
+	color: var(--c-red-dark);
 }
 
 .notTyped {
-	color: var(--c-tan-light) !important;
+	color: var(--c-blue) !important;
 }
 
 .typing-pane {
@@ -46,7 +46,7 @@
 }
 
 .author {
-	color: var(--c-tan-light) !important;
+	color: var(--c-blue) !important;
 }
 
 
@@ -58,17 +58,17 @@ form {
 }
 
 input {
-	width: 200px;
+	width: 300px;
 	border-radius: 5px;
 	background-color: var(--c-tan-light);
 	color: var(--c-pink-dark);
-	border: none;
+	border: 1px solid var(--c-pink-dark);
 	padding: 0.5em;
 	transition: width 0.1s ease-in-out;
 }
 
 input::placeholder {
-	color: var(--c-pink-light);
+	color: var(--c-pink-dark);
 }
 
 .closed {
