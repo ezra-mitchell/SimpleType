@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SimpleType</title>
 <script src="/resources/angular.min.js"></script>
-<script src="/resources/controllers/typing-test.js"></script>
+<script src="/resources/modules/typing-test/typing-test.module.js"></script>
+<script src="/resources/modules/typing-test/services/typing-test.service.js"></script>
+<script src="/resources/modules/typing-test/controllers/typing-test.controller.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
 <!-- I know its best practice to have this in a separate file this is just convenient while the HTML file is small -->
 <style>
@@ -84,29 +86,41 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	background-color: var(--c-red-dark);
 }
+
+.skeleton-text {
+	background-color: lightgray;
+	width: 60vw;
+	height: 25px;
+	display: block;
+}
+
+.dNone {
+	display: none;
+}
 </style>
 </head>
 <body ng-app="typing-test">
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 
-	<div ng-controller="TypingTestController" ng-init="getTest()"
+	<div ng-controller="TypingTestController as ctrl"
 		class="typing-container">
 		<div>
-			<h2>{{currentTime}}</h2>
-			<div class="typing-pane" ng-keydown="onKeyPress($event)"
+			<h2>{{ctrl.currentTime}}</h2>
+			<div class="typing-pane" ng-keydown="ctrl.onKeyPress($event)" ng-cloak
 				tabindex="-1" autofocus>
-				<span ng-repeat="charObj in text" ng-class="charObj.class">{{charObj.character}}</span>
+				<span class="skeleton-text" ng-show="ctrl.loading" > </span>	
+				<span ng-repeat="charObj in ctrl.text" ng-class="charObj.class">{{charObj.character}}</span>
 			</div>
-			<p class="author" align="right">{{author}}</p>
+			<p class="author" align="right">{{ctrl.author}}</p>
 
-			<p class="sub-text" ng-click="getTest()">Shift Tab for new test</p>
+			<p class="sub-text" ng-click="ctrl.getTest()">Shift Tab for new test</p>
 
 			<form action="/post-leaderboard" method="post">
-				<input type="text" name="name" required id="name" placeholder="Name" ng-class="{closed: finished === false}">
-				<input type="number" name="age" id="age" placeholder="Age" ng-class="{closed: finished === false}">
-				<input type="hidden" name="text[]" value="{{text}}" ng-if-start="finished === true"> 
-				<input type="hidden" name="errors[]" value="{{errors}}" ng-if-end> 
-				<input type="submit" value="Submit to leaderboard" ng-class="{closed: finished === false}">
+				<input type="text" name="name" required id="name" placeholder="Name" ng-class="{closed: ctrl.finished === false}">
+				<input type="number" name="age" id="age" placeholder="Age" ng-class="{closed: ctrl.finished === false}">
+				<input type="hidden" name="text[]" value="{{ctrl.text}}" ng-if-start="ctrl.finished === true"> 
+				<input type="hidden" name="errors[]" value="{{ctrl.errors}}" ng-if-end> 
+				<input type="submit" value="Submit to leaderboard" ng-class="{closed: ctrl.finished === false}">
 			</form>
 
 		</div>
