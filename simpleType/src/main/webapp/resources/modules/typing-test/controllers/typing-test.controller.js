@@ -15,50 +15,29 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 	self.author = "";
 
 	self.onKeyPress = function(e) {
+		if (self.text.length === 0 || self.finished) return;
+
+		//this is initialized here to be more true to actual time typed, code execution can delay a bit
+		let timeTyped = Date.now() - startTime ? startTime : 0;
+
 		let charTyped = e.key;
-		if (charTyped === "Tab") {
-			if (e.shiftKey) {
-				e.preventDefault();
-				self.getTest();
-			}
-			return;
-		}
-
-		if (self.text.length === 0 || self.finished || charTyped === "Shift") return;
-
-		if (self.startTime === undefined) {
-			self.startTime = Date.now();
-			self.interval = setInterval(self.updateTime, 1000);
-		}
-
-		if (charTyped === "Backspace") {
-			self.currentCharIndex !== 0 && self.currentCharIndex--;
-			let char = self.text[self.currentCharIndex];
-			char.timeTyped = undefined;
-			char.class = "notTyped";
-			char.typed = "";
-			char.extra && self.text.splice(self.currentCharIndex, 1);
-		} else {
-			let char = self.text[self.currentCharIndex];
-			if (char.character === ' ' && charTyped !== char.character) {
-				self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: ' ', timeTyped: (Date.now() - self.startTime) / 1000, class: 'error', extra: true });
-			} else {
-				char.timeTyped = (Date.now() - self.startTime) / 1000;
-				char.typed = charTyped;
-				if (char.typed !== char.character) {
-					char.class = 'error';
-					self.errors.push({ ...char });
+		switch (charTyped) {
+			case "Tab":
+				if (e.shiftKey) {
+					e.preventDefault();
+					self.getTest();
 				}
-				else char.class = 'correct';
-			}
-			self.currentCharIndex++;
+			case "Shift":
+				return;
+			case "Backspace":
+				backspace();
+				break;
+			default:
+				initializeStartTime();
+				typeCharacter(charTyped, timeTyped);
 		}
 
-
-		if (self.currentCharIndex >= self.text.length) {
-			self.finished = true;
-			self.finishTime = Date.now();
-		}
+		checkFinished();
 	};
 
 	self.updateTime = function() {
@@ -92,6 +71,50 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 			self.loading = false;
 		});
 	};
+
+	function initializeStartTime() {
+		if (self.startTime === undefined) {
+			self.startTime = Date.now();
+			self.interval = setInterval(self.updateTime, 1000);
+		}
+	}
+
+	function backspace() {
+		self.currentCharIndex !== 0 && self.currentCharIndex--;
+		let char = self.text[self.currentCharIndex];
+		char.timeTyped = undefined;
+		char.class = "notTyped";
+		char.typed = "";
+		char.char === '\0' && self.text.splice(self.currentCharIndex, 1);
+	}
+
+	function typeCharacter(charTyped, timeTyped) {
+		let currentCharacterObject = self.text[self.currentCharIndex];
+		let currentChar = currentCharacterObject.character;
+		let correct = charTyped === currentChar;
+
+
+		if (currentChar === ' ' && !correct)
+			self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: '\0', timeTyped, class: 'error' })
+		else {
+			currentCharacterObject.timeTyped = timeTyped;
+			currentCharacterObject.typed = charTyped;
+			currentCharacterObject.class = correct ? 'correct' : 'error';
+		}
+
+
+		self.currentCharIndex++;
+
+	}
+
+	function checkFinished() {
+		if (self.currentCharIndex >= self.text.length) {
+			self.finished = true;
+			self.finishTime = Date.now();
+		}
+	}
+
+
 
 	self.getTest();
 }]);
