@@ -24,11 +24,11 @@ h1, h2, h3, h4, h5 {
 }
 
 th {
-	color: var(--c-tan-light);
+	color: var(--c-bg-main);
 }
 
 td {
-	color: var(--c-pink-dark);
+	color: var(--c-correct);
 }
 
 th, td {
@@ -36,7 +36,7 @@ th, td {
 }
 
 a {
-	color: var(--c-blue);
+	color: var(--c-not-typed);
 	font-size: 0.7em;
 }
 
@@ -54,7 +54,7 @@ table {
 
 thead {
 	text-align: left;
-	background-color: var(--c-blue);
+	background-color: var(--c-not-typed);
 	border-radius: 5px;
 }
 
@@ -64,11 +64,11 @@ tbody tr{
 }
 
 tbody tr:nth-of-type(even) {
-	background-color: var(--c-tan);
+	background-color: var(--c-bg-secondary);
 }
 
 tbody tr:last-of-type {
-	border-bottop: 2px solid var(--c-blue)
+	border-bottop: 2px solid var(--c-not-typed)
 }
 
 </style>

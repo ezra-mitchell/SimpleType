@@ -15,10 +15,6 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 	self.author = "";
 
 	self.onKeyPress = function(e) {
-		if (self.text.length === 0 || self.finished) return;
-
-		//this is initialized here to be more true to actual time typed, code execution can delay a bit
-		let timeTyped = Date.now() - startTime ? startTime : 0;
 
 		let charTyped = e.key;
 		switch (charTyped) {
@@ -30,11 +26,13 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 			case "Shift":
 				return;
 			case "Backspace":
+				if (self.text.length === 0 || self.finished) return;
 				backspace();
 				break;
 			default:
+				if (self.text.length === 0 || self.finished) return;
 				initializeStartTime();
-				typeCharacter(charTyped, timeTyped);
+				typeCharacter(charTyped);
 		}
 
 		checkFinished();
@@ -65,7 +63,7 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 
 		typingTestService.getTypingTest().then(data => {
 			for (let c of data.content) {
-				self.text.push({ character: c, typed: "", timeTyped: undefined, class: 'notTyped', extra: false });
+				self.text.push({ character: c, typed: "", timeTyped: undefined, class: 'notTyped', deletable: false });
 			}
 			self.author = data.author;
 			self.loading = false;
@@ -85,21 +83,25 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 		char.timeTyped = undefined;
 		char.class = "notTyped";
 		char.typed = "";
-		char.char === '\0' && self.text.splice(self.currentCharIndex, 1);
+		char.deletable === true && self.text.splice(self.currentCharIndex, 1);
 	}
 
-	function typeCharacter(charTyped, timeTyped) {
+	function typeCharacter(charTyped) {
 		let currentCharacterObject = self.text[self.currentCharIndex];
 		let currentChar = currentCharacterObject.character;
 		let correct = charTyped === currentChar;
 
+		let timeTyped = (Date.now() - self.startTime) / 1000;
 
 		if (currentChar === ' ' && !correct)
-			self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: '\0', timeTyped, class: 'error' })
+			self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: '\0', timeTyped: timeTyped / 1000, class: 'error', deletable: true })
 		else {
 			currentCharacterObject.timeTyped = timeTyped;
 			currentCharacterObject.typed = charTyped;
 			currentCharacterObject.class = correct ? 'correct' : 'error';
+			if (!correct) {
+				self.errors.push(Object.assign({}, currentCharacterObject));
+			}
 		}
 
 

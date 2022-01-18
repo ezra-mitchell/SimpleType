@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.afs.ezra.simpleType.leaderboard.dto.LeaderboardPlaceDTO;
-import com.afs.ezra.simpleType.leaderboard.model.LeaderboardPlace;
 import com.afs.ezra.simpleType.leaderboard.service.LeaderboardService;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;

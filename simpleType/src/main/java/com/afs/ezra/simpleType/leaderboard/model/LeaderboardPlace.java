@@ -21,6 +21,7 @@ import lombok.experimental.Accessors;
 public class LeaderboardPlace {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private Long id;
 	
 	@Column(nullable = false)
