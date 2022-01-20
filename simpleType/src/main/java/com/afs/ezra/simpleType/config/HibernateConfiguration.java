@@ -1,6 +1,7 @@
 package com.afs.ezra.simpleType.config;
 
 
+import java.sql.SQLException;
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -17,6 +18,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import org.h2.tools.Server;
 
 @Configuration
 @EnableTransactionManagement
@@ -63,6 +65,13 @@ public class HibernateConfiguration {
 		HibernateTransactionManager txManager = new HibernateTransactionManager();
 		txManager.setSessionFactory(s);
 		return txManager;
+	}
+	
+	@Bean
+	public Server startH2Server() throws SQLException {
+		Server server = Server.createTcpServer().start();
+		System.err.println(server.getURL());
+		return server;
 	}
 	
 

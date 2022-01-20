@@ -8,6 +8,7 @@
 <script src="/resources/angular.min.js"></script>
 <script src="/resources/modules/theme/theme.module.js"></script>
 <script src="/resources/modules/theme/services/theme-changer.service.js"></script>
+<script src="/resources/modules/theme/components/theme-changer/theme-changer.component.js"></script>
 <script
 	src="/resources/modules/theme/controllers/theme-editor.controller.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
@@ -17,7 +18,7 @@
 
 	<div ng-controller="ThemeEditorController as ctrl">
 		<form ng-submit="ctrl.stubSubmit($event)">
-			<label>Name: <input type="text" ng-model="ctrl.theme.name" /></label>
+			<label>Name: <input type="text" ng-model="ctrl.theme.name" ></label>
 			<h4>Colors</h4>
 			<label>Background Main: <input type="text"
 				ng-model="ctrl.theme.colors['--c-bg-main']" /></label> <label>Background
@@ -40,10 +41,14 @@
 		<button ng-click="ctrl.createTheme()">Create</button>
 		<button ng-click="ctrl.updateTheme()">Update</button>
 		<button ng-click="ctrl.deleteTheme()">Delete</button>
-		<button ng-click="ctrl.updateAvailableThemes()">Refresh</button>
+		<button ng-click="ctrl.updateAvailableThemes()">Get Themes</button>
 		<br>
 		<span ng-repeat="theme in ctrl.availableThemes"
-			ng-click="ctrl.getTheme(theme)">{{theme}}</span>
+			ng-click="ctrl.getTheme(theme)"> {{theme}} </span>
+			
+		<br>
+		<br>
+		<theme-changer></theme-changer>
 	</div>
 </body>
 </html>

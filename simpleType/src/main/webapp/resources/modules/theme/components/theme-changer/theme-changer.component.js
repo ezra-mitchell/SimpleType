@@ -1,7 +1,7 @@
 
 angular.module('theme').component('themeChanger', {
 	controller: ThemeChanger,
-	template: '<div>Themes: <span ng-repeat="theme in $ctrl.availableThemes" ng-click="$ctrl.getTheme(theme)"> {{theme}} </span></div>',
+	template: '<div><a href="/themes/editor">Themes:</a> <span ng-repeat="theme in $ctrl.availableThemes" ng-click="$ctrl.getTheme(theme)"> {{theme}} </span></div>',
 	bindings: {
 		currentTheme: '<'
 	},
@@ -23,7 +23,11 @@ function ThemeChanger(ThemeChangerService) {
 	function init() {
 		let theme = window.localStorage.getItem("theme");
 		if (theme) {
-			getTheme(theme);
+			let colors = JSON.parse(theme);
+			let root = document.querySelector(":root");
+			for (let color in colors) {
+				root.style.setProperty(color, '#' + colors[color]);
+			}
 		}
 		updateAvailableThemes();
 	}
@@ -36,13 +40,13 @@ function ThemeChanger(ThemeChangerService) {
 			for (let color in theme.colors) {
 				root.style.setProperty(color, '#' + theme.colors[color]);
 			}
-		})
+			window.localStorage.setItem("theme", JSON.stringify(theme.colors));
+		});
 	}
 
 	function updateAvailableThemes() {
 		ThemeChangerService.getAvailableThemes().then((res) => {
 			self.availableThemes = res;
-		})
+		});
 	}
-
 }

@@ -41,14 +41,14 @@ public class ThemeService {
 		dto.setName(theme.getName());
 		dto.setId(theme.getId());
 		dto.setColors(new ThemeColorsDto());
-		dto.getColors().setAccent(Integer.toHexString(theme.getAccent()));
-		dto.getColors().setAccentLight(Integer.toHexString(theme.getAccentLight()));
-		dto.getColors().setBackgroundMain(Integer.toHexString(theme.getBackgroundMain()));
-		dto.getColors().setBackgroundSecondary(Integer.toHexString(theme.getBackgroundSecondary()));
-		dto.getColors().setNeutral(Integer.toHexString(theme.getNeutral()));
-		dto.getColors().setCorrect(Integer.toHexString(theme.getCorrect()));
-		dto.getColors().setError(Integer.toHexString(theme.getError()));
-		dto.getColors().setNotTyped(Integer.toHexString(theme.getNotTyped()));
+		dto.getColors().setAccent(toHexString(theme.getAccent()));
+		dto.getColors().setAccentLight(toHexString(theme.getAccentLight()));
+		dto.getColors().setBackgroundMain(toHexString(theme.getBackgroundMain()));
+		dto.getColors().setBackgroundSecondary(toHexString(theme.getBackgroundSecondary()));
+		dto.getColors().setNeutral(toHexString(theme.getNeutral()));
+		dto.getColors().setCorrect(toHexString(theme.getCorrect()));
+		dto.getColors().setError(toHexString(theme.getError()));
+		dto.getColors().setNotTyped(toHexString(theme.getNotTyped()));
 		
 		return dto;
 	}
@@ -72,6 +72,12 @@ public class ThemeService {
 	
 	private Integer parseHexString(String hex) {
 		return Integer.decode("0x" + hex.replaceAll("#", ""));
+	}
+	
+	private String toHexString(Integer number) {
+		String hex = Integer.toHexString(number);
+		int length = hex.length() > 3 ? 6 : 3;
+		return String.format("%1$" + length + "s", hex).replace(' ', '0');
 	}
 	
 
