@@ -13,7 +13,7 @@
 	src="/resources/modules/theme/controllers/theme-editor.controller.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
 </head>
-<body ng-app="theme">
+<body ng-app="theme-module">
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 
 	<div ng-controller="ThemeEditorController as ctrl">

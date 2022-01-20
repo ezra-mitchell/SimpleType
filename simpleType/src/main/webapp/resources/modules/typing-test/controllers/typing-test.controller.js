@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('typing-test').controller('TypingTestController', ['TypingTestService', function(typingTestService) {
+angular.module('typing-test-module').controller('TypingTestController', ['TypingTestService', function(typingTestService) {
 	var self = this;
 
 	self.text = []; // { char: '', typed, '', timeTyped: undefined }

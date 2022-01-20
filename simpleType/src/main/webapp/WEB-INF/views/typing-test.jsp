@@ -102,7 +102,7 @@ input[type="submit"]:hover{
 }
 </style>
 </head>
-<body ng-app="typing-test">
+<body ng-app="typing-test-module">
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 
 	<div ng-controller="TypingTestController as ctrl"

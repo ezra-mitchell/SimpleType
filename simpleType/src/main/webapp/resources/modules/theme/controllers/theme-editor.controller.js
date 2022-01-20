@@ -1,4 +1,4 @@
-angular.module('theme').controller('ThemeEditorController', ThemeEditor);
+angular.module('theme-module').controller('ThemeEditorController', ThemeEditor);
 
 
 ThemeEditor.$inject = ['ThemeChangerService']

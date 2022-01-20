@@ -1,5 +1,5 @@
 
-angular.module('theme').component('themeChanger', {
+angular.module('theme-module').component('themeChanger', {
 	controller: ThemeChanger,
 	template: '<div><a href="/themes/editor">Themes:</a> <span ng-repeat="theme in $ctrl.availableThemes" ng-click="$ctrl.getTheme(theme)"> {{theme}} </span></div>',
 	bindings: {

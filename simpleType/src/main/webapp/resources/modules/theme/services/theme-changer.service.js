@@ -1,5 +1,5 @@
 
-angular.module('theme').factory('ThemeChangerService', ThemeChangerServiceFactory)
+angular.module('theme-module').factory('ThemeChangerService', ThemeChangerServiceFactory)
 
 ThemeChangerServiceFactory.$inject = ['$http']
 

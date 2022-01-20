@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module("typing-test").factory('TypingTestService', ['$http', function(http) {
+angular.module("typing-test-module").factory('TypingTestService', ['$http', function(http) {
 	var factory = {
 		getTypingTest: getTypingTest,
 	}

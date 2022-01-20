@@ -73,7 +73,7 @@ tbody tr:last-of-type {
 </style>
 
 </head>
-<body ng-app="theme">
+<body ng-app="theme-module">
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 	<div class="container">
 		<div>
