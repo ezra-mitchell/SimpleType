@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('typing-test').controller('TypingTestController', ['TypingTestService', function(typingTestService) {
+angular.module('typing-test-module').controller('TypingTestController', ['TypingTestService', function(typingTestService) {
 	var self = this;
 
 	self.text = []; // { char: '', typed, '', timeTyped: undefined }
@@ -15,50 +15,27 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 	self.author = "";
 
 	self.onKeyPress = function(e) {
+
 		let charTyped = e.key;
-		if (charTyped === "Tab") {
-			if (e.shiftKey) {
-				e.preventDefault();
-				self.getTest();
-			}
-			return;
-		}
-
-		if (self.text.length === 0 || self.finished || charTyped === "Shift") return;
-
-		if (self.startTime === undefined) {
-			self.startTime = Date.now();
-			self.interval = setInterval(self.updateTime, 1000);
-		}
-
-		if (charTyped === "Backspace") {
-			self.currentCharIndex !== 0 && self.currentCharIndex--;
-			let char = self.text[self.currentCharIndex];
-			char.timeTyped = undefined;
-			char.class = "notTyped";
-			char.typed = "";
-			char.extra && self.text.splice(self.currentCharIndex, 1);
-		} else {
-			let char = self.text[self.currentCharIndex];
-			if (char.character === ' ' && charTyped !== char.character) {
-				self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: ' ', timeTyped: (Date.now() - self.startTime) / 1000, class: 'error', extra: true });
-			} else {
-				char.timeTyped = (Date.now() - self.startTime) / 1000;
-				char.typed = charTyped;
-				if (char.typed !== char.character) {
-					char.class = 'error';
-					self.errors.push({ ...char });
+		switch (charTyped) {
+			case "Tab":
+				if (e.shiftKey) {
+					e.preventDefault();
+					self.getTest();
 				}
-				else char.class = 'correct';
-			}
-			self.currentCharIndex++;
+			case "Shift":
+				return;
+			case "Backspace":
+				if (self.text.length === 0 || self.finished) return;
+				backspace();
+				break;
+			default:
+				if (self.text.length === 0 || self.finished) return;
+				initializeStartTime();
+				typeCharacter(charTyped);
 		}
 
-
-		if (self.currentCharIndex >= self.text.length) {
-			self.finished = true;
-			self.finishTime = Date.now();
-		}
+		checkFinished();
 	};
 
 	self.updateTime = function() {
@@ -86,12 +63,60 @@ angular.module('typing-test').controller('TypingTestController', ['TypingTestSer
 
 		typingTestService.getTypingTest().then(data => {
 			for (let c of data.content) {
-				self.text.push({ character: c, typed: "", timeTyped: undefined, class: 'notTyped', extra: false });
+				self.text.push({ character: c, typed: "", timeTyped: undefined, class: 'notTyped', deletable: false });
 			}
 			self.author = data.author;
 			self.loading = false;
 		});
 	};
+
+	function initializeStartTime() {
+		if (self.startTime === undefined) {
+			self.startTime = Date.now();
+			self.interval = setInterval(self.updateTime, 1000);
+		}
+	}
+
+	function backspace() {
+		self.currentCharIndex !== 0 && self.currentCharIndex--;
+		let char = self.text[self.currentCharIndex];
+		char.timeTyped = undefined;
+		char.class = "notTyped";
+		char.typed = "";
+		char.deletable === true && self.text.splice(self.currentCharIndex, 1);
+	}
+
+	function typeCharacter(charTyped) {
+		let currentCharacterObject = self.text[self.currentCharIndex];
+		let currentChar = currentCharacterObject.character;
+		let correct = charTyped === currentChar;
+
+		let timeTyped = (Date.now() - self.startTime) / 1000;
+
+		if (currentChar === ' ' && !correct)
+			self.text.splice(self.currentCharIndex, 0, { character: charTyped, typed: '\0', timeTyped: timeTyped / 1000, class: 'error', deletable: true })
+		else {
+			currentCharacterObject.timeTyped = timeTyped;
+			currentCharacterObject.typed = charTyped;
+			currentCharacterObject.class = correct ? 'correct' : 'error';
+			if (!correct) {
+				self.errors.push(Object.assign({}, currentCharacterObject));
+			}
+		}
+
+
+		self.currentCharIndex++;
+
+	}
+
+	function checkFinished() {
+		if (self.currentCharIndex >= self.text.length) {
+			self.finished = true;
+			self.finishTime = Date.now();
+		}
+	}
+
+
 
 	self.getTest();
 }]);

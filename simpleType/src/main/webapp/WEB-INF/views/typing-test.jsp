@@ -5,22 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SimpleType</title>
 <script src="/resources/angular.min.js"></script>
+<script src="/resources/modules/theme/theme.module.js"></script>
 <script src="/resources/modules/typing-test/typing-test.module.js"></script>
+<script src="/resources/modules/theme/services/theme-changer.service.js"></script>
+<script src="/resources/modules/theme/components/theme-changer/theme-changer.component.js"></script>
 <script src="/resources/modules/typing-test/services/typing-test.service.js"></script>
 <script src="/resources/modules/typing-test/controllers/typing-test.controller.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
 <!-- I know its best practice to have this in a separate file this is just convenient while the HTML file is small -->
 <style>
 .correct {
-	color: var(--c-pink-dark);
+	color: var(--c-correct);
 }
 
 .error {
-	color: var(--c-red-dark);
+	color: var(--c-error);
 }
 
 .notTyped {
-	color: var(--c-blue) !important;
+	color: var(--c-not-typed);
 }
 
 .typing-pane {
@@ -41,14 +44,14 @@
 }
 
 .sub-text {
-	color: var(--c-orange);
+	color: var(--c-accent);
 	font-size: 0.7em;
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 .author {
-	color: var(--c-blue) !important;
+	color: var(--c-not-typed) !important;
 }
 
 
@@ -62,15 +65,15 @@ form {
 input {
 	width: 300px;
 	border-radius: 5px;
-	background-color: var(--c-tan-light);
-	color: var(--c-pink-dark);
-	border: 1px solid var(--c-pink-dark);
+	background-color: var(--c-bg-main);
+	color: var(--c-correct);
+	border: 1px solid var(--c-correct);
 	padding: 0.5em;
 	transition: width 0.1s ease-in-out;
 }
 
 input::placeholder {
-	color: var(--c-pink-dark);
+	color: var(--c-correct);
 }
 
 .closed {
@@ -84,11 +87,11 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-	background-color: var(--c-red-dark);
+	background-color: var(--c-error);
 }
 
 .skeleton-text {
-	background-color: lightgray;
+	background-color: var(--c-neutral);
 	width: 60vw;
 	height: 25px;
 	display: block;
@@ -99,7 +102,7 @@ input[type="submit"]:hover{
 }
 </style>
 </head>
-<body ng-app="typing-test">
+<body ng-app="typing-test-module">
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 
 	<div ng-controller="TypingTestController as ctrl"
@@ -125,6 +128,8 @@ input[type="submit"]:hover{
 
 		</div>
 	</div>
+
+	<theme-changer></theme-changer>
 
 
 </body>

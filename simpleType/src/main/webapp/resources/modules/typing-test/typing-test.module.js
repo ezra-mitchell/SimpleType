@@ -1,1 +1,1 @@
-angular.module("typing-test", []);
+angular.module('typing-test-module', ['theme-module']);

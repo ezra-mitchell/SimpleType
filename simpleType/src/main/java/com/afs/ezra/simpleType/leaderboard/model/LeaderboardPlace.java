@@ -1,19 +1,38 @@
 package com.afs.ezra.simpleType.leaderboard.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.experimental.Accessors;
 
+@Entity
+@Table(name="LEADERBOARD")
+@Getter
+@Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class LeaderboardPlace {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private Long id;
 	
-	private int place;
+	@Column(nullable = false)
 	private String name;
-	private double speed;
-	private double accuracy;
+	
+	@Column(nullable = true)
+	private Integer age;
 
+	@Column(nullable = false)
+	private Double speed;
+	
+	@Column(nullable = false)
+	private Double accuracy;
 }

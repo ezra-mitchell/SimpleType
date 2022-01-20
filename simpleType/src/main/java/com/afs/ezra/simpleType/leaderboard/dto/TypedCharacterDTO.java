@@ -1,4 +1,4 @@
-package com.afs.ezra.simpleType.leaderboard.model;
+package com.afs.ezra.simpleType.leaderboard.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,9 +7,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class TypedCharacter {
+public class TypedCharacterDTO {
 
 	private Character character;
 	private Character typed;
-	private double timeTyped;
+	private Double timeTyped;
 }
