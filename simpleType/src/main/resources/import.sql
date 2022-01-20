@@ -1,0 +1,1 @@
+INSERT INTO Theme (id, name, accent, accentLight, backgroundMain, backgroundSecondary, correct, error, neutral, notTyped) values (1, 'default', 15229522, 15236769, 15657936, 15525820, 15607415, 3934489, 6840180, 5209260)
