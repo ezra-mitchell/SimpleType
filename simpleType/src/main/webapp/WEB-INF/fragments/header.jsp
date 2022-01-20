@@ -3,12 +3,13 @@ header {
 	display: flex;
 	padding: 0.4em 1em 0.4em 1em;
 	height: 60px;
-	background-color: var(--c-accent-light);
+	background-color: var(--c-pink-light);
 }
 
 .logo {
 	font-size: 2em;
-	color: var(--c-bg-main);
+	color: white;
+	color: var(--c-tan-light);
 	text-decoration: none;
 	font-weight: bold;
 }

@@ -5,25 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SimpleType</title>
 <script src="/resources/angular.min.js"></script>
-<script src="/resources/modules/theme/theme.module.js"></script>
 <script src="/resources/modules/typing-test/typing-test.module.js"></script>
-<script src="/resources/modules/theme/services/theme-changer.service.js"></script>
-<script src="/resources/modules/theme/components/theme-changer/theme-changer.component.js"></script>
 <script src="/resources/modules/typing-test/services/typing-test.service.js"></script>
 <script src="/resources/modules/typing-test/controllers/typing-test.controller.js"></script>
 <link rel="stylesheet" href="/resources/style.css">
 <!-- I know its best practice to have this in a separate file this is just convenient while the HTML file is small -->
 <style>
 .correct {
-	color: var(--c-correct);
+	color: var(--c-pink-dark);
 }
 
 .error {
-	color: var(--c-error);
+	color: var(--c-red-dark);
 }
 
 .notTyped {
-	color: var(--c-not-typed);
+	color: var(--c-blue) !important;
 }
 
 .typing-pane {
@@ -44,14 +41,14 @@
 }
 
 .sub-text {
-	color: var(--c-accent);
+	color: var(--c-orange);
 	font-size: 0.7em;
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 .author {
-	color: var(--c-not-typed) !important;
+	color: var(--c-blue) !important;
 }
 
 
@@ -65,15 +62,15 @@ form {
 input {
 	width: 300px;
 	border-radius: 5px;
-	background-color: var(--c-bg-main);
-	color: var(--c-correct);
-	border: 1px solid var(--c-correct);
+	background-color: var(--c-tan-light);
+	color: var(--c-pink-dark);
+	border: 1px solid var(--c-pink-dark);
 	padding: 0.5em;
 	transition: width 0.1s ease-in-out;
 }
 
 input::placeholder {
-	color: var(--c-correct);
+	color: var(--c-pink-dark);
 }
 
 .closed {
@@ -87,11 +84,11 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-	background-color: var(--c-error);
+	background-color: var(--c-red-dark);
 }
 
 .skeleton-text {
-	background-color: var(--c-neutral);
+	background-color: lightgray;
 	width: 60vw;
 	height: 25px;
 	display: block;
@@ -128,8 +125,6 @@ input[type="submit"]:hover{
 
 		</div>
 	</div>
-
-	<theme-changer></theme-changer>
 
 
 </body>
