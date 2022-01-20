@@ -8,17 +8,18 @@ html, body {
 }
 
 :root {
-	--c-accent: #e86252;
-	--c-accent-light: #e87ea1;
-	--c-bg-secondary: #ECE7BC;
-	--c-bg-main: #eeebd0;
-	--c-neutral: #685f74;
-	--c-not-typed: #4f7cac;
-	--c-error: #3c0919;
-	--c-correct: #ee2677;
+	--c-orange: #e86252;
+	--c-pink-dark: #ee2677;
+	--c-pink-light: #e87ea1;
+	--c-tan: #ECE7BC;
+	--c-tan-light: #eeebd0;
+	--c-gray: #685f74;
+	--c-blue: #4f7cac;
+	--c-red-dark: #3c0919;
+	--c-red: #7d1128;
 }
 
 body {
-	background-color: var(--c-bg-main);
+	background-color: var(--c-tan-light);
 	font-size: 130%;
 }

@@ -6,11 +6,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SimpleType</title>
+<!--  
+This can be added back if angularjs is necessary, currently removed for bundle size
 <script src="/resources/angular.min.js"></script>
-<script src="/resources/modules/theme/theme.module.js"></script>
-<script src="/resources/modules/theme/services/theme-changer.service.js"></script>
-<script src="/resources/modules/theme/components/theme-changer/theme-changer.component.js"></script>
+-->
 <link rel="stylesheet" href="/resources/style.css">
+
 <style>
 h1, h2, h3, h4, h5 {
 	color: var(--c-pink-dark);
@@ -23,11 +24,11 @@ h1, h2, h3, h4, h5 {
 }
 
 th {
-	color: var(--c-bg-main);
+	color: var(--c-tan-light);
 }
 
 td {
-	color: var(--c-correct);
+	color: var(--c-pink-dark);
 }
 
 th, td {
@@ -35,7 +36,7 @@ th, td {
 }
 
 a {
-	color: var(--c-not-typed);
+	color: var(--c-blue);
 	font-size: 0.7em;
 }
 
@@ -53,7 +54,7 @@ table {
 
 thead {
 	text-align: left;
-	background-color: var(--c-not-typed);
+	background-color: var(--c-blue);
 	border-radius: 5px;
 }
 
@@ -63,17 +64,17 @@ tbody tr{
 }
 
 tbody tr:nth-of-type(even) {
-	background-color: var(--c-bg-secondary);
+	background-color: var(--c-tan);
 }
 
 tbody tr:last-of-type {
-	border-bottop: 2px solid var(--c-not-typed)
+	border-bottop: 2px solid var(--c-blue)
 }
 
 </style>
 
 </head>
-<body ng-app="theme">
+<body>
 	<jsp:include page="../fragments/header.jsp"></jsp:include>
 	<div class="container">
 		<div>
@@ -133,7 +134,6 @@ tbody tr:last-of-type {
 			</h4>
 		</div>
 	</div>
-	<theme-changer></theme-changer>
 	<script>
 		document.addEventListener('keydown', (e) => {
 			console.log(e.code);

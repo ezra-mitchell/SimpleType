@@ -1,4 +1,4 @@
-package com.afs.ezra.simpleType.leaderboard.controller;
+package com.afs.ezra.simpleType.leaderboard;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.afs.ezra.simpleType.leaderboard.dto.LeaderboardPlaceDTO;
-import com.afs.ezra.simpleType.leaderboard.service.LeaderboardService;
+import com.afs.ezra.simpleType.leaderboard.model.LeaderboardPlace;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
@@ -26,7 +25,7 @@ public class LeaderboardController {
 			@RequestParam("errors[]") String errorsJSON, @RequestParam(value = "name") String name,
 			@RequestParam(value = "age") Integer age) throws JsonParseException, JsonMappingException, IOException {
 
-		List<LeaderboardPlaceDTO> leaderboard = leaderboardService.postLeaderboardScore(textJSON, errorsJSON, name, 0);
+		List<LeaderboardPlace> leaderboard = leaderboardService.postLeaderboardScore(textJSON, errorsJSON, name, 0);
 
 		ModelAndView view = new ModelAndView("leaderboard");
 		view.addObject("placement", leaderboard);
