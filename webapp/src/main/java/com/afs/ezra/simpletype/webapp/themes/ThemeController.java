@@ -1,8 +1,5 @@
 package com.afs.ezra.simpletype.webapp.themes;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import javax.validation.Valid;
 
 import org.springframework.http.ResponseEntity;
@@ -29,26 +26,23 @@ public class ThemeController {
 	}
 
 	@GetMapping("/themes/list")
-	public ResponseEntity<List<String>> getAvailableThemes() {
-		return ResponseEntity.ok(manager.getAllThemes().stream().map((theme) -> theme.getName()).collect(Collectors.toList()));
+	public ResponseEntity<String[]> getAvailableThemes() {
+		return manager.getAllThemes();
 	}
 
 	@DeleteMapping("/themes/{themeName}")
 	public ResponseEntity<Void> deleteTheme(@PathVariable String themeName) {
-		manager.deleteTheme(themeName);
-		return ResponseEntity.ok(null);
+		return manager.deleteTheme(themeName);
 	}
 
 	@PostMapping("/themes")
 	public ResponseEntity<Void> createTheme(@RequestBody @Valid ThemeDto themeDto) {
-		manager.saveTheme(themeDto);
-		return ResponseEntity.ok(null);
+		return manager.saveTheme(themeDto);
 	}
 
 	@PutMapping("/themes")
 	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeDto themeDto) {
-		manager.updateTheme(themeDto);
-		return ResponseEntity.ok(null);
+		return manager.updateTheme(themeDto);
 	}
 	
 	@GetMapping("/themes/editor")

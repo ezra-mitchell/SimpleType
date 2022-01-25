@@ -1,1 +1,0 @@
-angular.module('typing-test-module', ['theme-module']);
