@@ -26,9 +26,6 @@ public class LeaderboardPlace {
 	
 	@Column(nullable = false)
 	private String name;
-	
-	@Column(nullable = true)
-	private Integer age;
 
 	@Column(nullable = false)
 	private Double speed;

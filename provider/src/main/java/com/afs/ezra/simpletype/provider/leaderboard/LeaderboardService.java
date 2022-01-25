@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 public interface LeaderboardService {
 	
-	List<LeaderboardPlaceDTO> postLeaderboardScore(String textJSON, String errorsJSON, String name, int age) throws JsonParseException, JsonMappingException, IOException;
+	List<LeaderboardPlaceDTO> postLeaderboardScore(String textJSON, String errorsJSON, String name) throws JsonParseException, JsonMappingException, IOException;
 
 	List<LeaderboardPlaceDTO> getTopLeaderboard(int length);
 }

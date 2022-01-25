@@ -24,7 +24,7 @@ public class LeaderboardServiceImpl implements LeaderboardService {
 	private final LeaderboardRepository leaderboard;
 
 	@Override
-	public List<LeaderboardPlaceDTO> postLeaderboardScore(String textJSON, String errorsJSON, String name, int age)
+	public List<LeaderboardPlaceDTO> postLeaderboardScore(String textJSON, String errorsJSON, String name)
 			throws JsonParseException, JsonMappingException, IOException {
 		TypedCharacterDTO[] text = objectMapper.readValue(textJSON, TypedCharacterDTO[].class);
 		TypedCharacterDTO[] errors = objectMapper.readValue(errorsJSON, TypedCharacterDTO[].class);
@@ -41,7 +41,7 @@ public class LeaderboardServiceImpl implements LeaderboardService {
 
 		double accuracy = (1 - (double) errors.length / (double) text.length) * 100;
 
-		leaderboard.save(new LeaderboardPlace(null, name, age, netWPM, accuracy));
+		leaderboard.save(new LeaderboardPlace(null, name, netWPM, accuracy));
 
 		List<LeaderboardPlaceDTO> placement = new ArrayList<LeaderboardPlaceDTO>();
 		placement.add(new LeaderboardPlaceDTO(1, name, netWPM, accuracy));
