@@ -1,4 +1,4 @@
-package com.afs.ezra.simpletype.provider.themes;
+package com.afs.ezra.simpletype.provider.themes.controller;
 
 import java.util.List;
 
@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.afs.ezra.simpletype.provider.themes.model.ThemeView;
+import com.afs.ezra.simpletype.provider.themes.service.ThemeService;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -22,7 +25,7 @@ public class ThemeController {
 	private final ThemeService themeService;
 
 	@GetMapping("/themes/{themeName}")
-	public ResponseEntity<ThemeDto> getTheme(@PathVariable String themeName) {
+	public ResponseEntity<ThemeView> getTheme(@PathVariable String themeName) {
 		return ResponseEntity.ok(themeService.getTheme(themeName));
 	}
 
@@ -38,13 +41,13 @@ public class ThemeController {
 	}
 
 	@PostMapping("/themes")
-	public ResponseEntity<Void> createTheme(@RequestBody @Valid ThemeDto themeDto) {
+	public ResponseEntity<Void> createTheme(@RequestBody @Valid ThemeView themeDto) {
 		themeService.saveTheme(themeDto);
 		return ResponseEntity.ok(null);
 	}
 
 	@PutMapping("/themes")
-	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeDto themeDto) {
+	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeView themeDto) {
 		themeService.updateTheme(themeDto);
 		return ResponseEntity.ok(null);
 	}
