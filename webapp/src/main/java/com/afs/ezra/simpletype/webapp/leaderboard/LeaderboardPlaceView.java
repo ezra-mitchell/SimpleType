@@ -9,11 +9,17 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class LeaderboardPlaceDTO {
+public class LeaderboardPlaceView implements LeaderboardPlace{
 
-	private int place;
+	private Long place;
 	private String name;
 	private Double speed;
 	private Double accuracy;
+
+	@Override
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

@@ -21,21 +21,21 @@
 			<label>Name: <input type="text" ng-model="ctrl.theme.name" ></label>
 			<h4>Colors</h4>
 			<label>Background Main: <input type="text"
-				ng-model="ctrl.theme.colors['--c-bg-main']" /></label> <label>Background
+				ng-model="ctrl.theme['--c-bg-main']" /></label> <label>Background
 				Secondary: <input type="text"
-				ng-model="ctrl.theme.colors['--c-bg-secondary']" />
+				ng-model="ctrl.theme['--c-bg-secondary']" />
 			</label> <label>Accent: <input type="text"
-				ng-model="ctrl.theme.colors['--c-accent']" /></label> <label>Accent
+				ng-model="ctrl.theme['--c-accent']" /></label> <label>Accent
 				Light: <input type="text"
-				ng-model="ctrl.theme.colors['--c-accent-light']" />
+				ng-model="ctrl.theme['--c-accent-light']" />
 			</label> <label>Neutral: <input type="text"
-				ng-model="ctrl.theme.colors['--c-neutral']" /></label> <label>Not
+				ng-model="ctrl.theme['--c-neutral']" /></label> <label>Not
 				Typed: <input type="text"
-				ng-model="ctrl.theme.colors['--c-not-typed']" />
+				ng-model="ctrl.theme['--c-not-typed']" />
 			</label> <label>Error: <input type="text"
-				ng-model="ctrl.theme.colors['--c-error']" />
+				ng-model="ctrl.theme['--c-error']" />
 			</label> <label>Correct: <input type="text"
-				ng-model="ctrl.theme.colors['--c-correct']" /></label>
+				ng-model="ctrl.theme['--c-correct']" /></label>
 
 		</form>
 		<button ng-click="ctrl.createTheme()">Create</button>

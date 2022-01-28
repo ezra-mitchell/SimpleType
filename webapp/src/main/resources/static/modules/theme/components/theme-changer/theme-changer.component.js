@@ -20,13 +20,24 @@ function ThemeChanger(ThemeChangerService) {
 
 	init();
 
+	var colors = [
+		'--c-accent',
+		'--c-accent-light',
+		'--c-bg-secondary',
+		'--c-bg-main',
+		'--c-neutral',
+		'--c-not-typed',
+		'--c-error',
+		'--c-correct'
+	]
+
 	function init() {
-		let theme = window.localStorage.getItem("theme");
-		if (theme) {
-			let colors = JSON.parse(theme);
+		let themeJSON = window.localStorage.getItem("theme");
+		if (themeJSON) {
+			let theme = JSON.parse(themeJSON);
 			let root = document.querySelector(":root");
 			for (let color in colors) {
-				root.style.setProperty(color, '#' + colors[color]);
+				root.style.setProperty(color, theme[color]);
 			}
 		}
 		updateAvailableThemes();
@@ -37,10 +48,10 @@ function ThemeChanger(ThemeChangerService) {
 			self.currentTheme = theme.name;
 
 			let root = document.querySelector(":root");
-			for (let color in theme.colors) {
-				root.style.setProperty(color, '#' + theme.colors[color]);
+			for (let color in colors) {
+				root.style.setProperty(color, theme[color]);
 			}
-			window.localStorage.setItem("theme", JSON.stringify(theme.colors));
+			window.localStorage.setItem("theme", JSON.stringify(theme));
 		});
 	}
 

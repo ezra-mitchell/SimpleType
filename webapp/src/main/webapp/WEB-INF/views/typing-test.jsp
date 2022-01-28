@@ -118,7 +118,7 @@ input[type="submit"]:hover{
 
 			<p class="sub-text" ng-click="ctrl.getTest()">Shift Tab for new test</p>
 
-			<form action="/post-leaderboard" method="post">
+			<form action="/leaderboard" method="post">
 				<input type="text" name="name" required id="name" placeholder="Name" ng-class="{closed: ctrl.finished === false}">
 				<input type="number" name="age" id="age" placeholder="Age" ng-class="{closed: ctrl.finished === false}">
 				<input type="hidden" name="text[]" value="{{ctrl.text}}" ng-if-start="ctrl.finished === true"> 

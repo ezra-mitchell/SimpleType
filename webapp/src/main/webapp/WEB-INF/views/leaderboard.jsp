@@ -90,16 +90,14 @@ tbody tr:last-of-type {
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${placement}" var="spot">
 						<tr>
-							<td>${spot.place}</td>
-							<td>${spot.name}</td>
-							<td><fmt:formatNumber value="${spot.speed}" type="number"
+							<td>${placement.place}</td>
+							<td>${placement.name}</td>
+							<td><fmt:formatNumber value="${placement.speed}" type="number"
 									maxFractionDigits="1" /> wpm</td>
-							<td><fmt:formatNumber value="${spot.accuracy}" type="number"
+							<td><fmt:formatNumber value="${placement.accuracy}" type="number"
 									maxFractionDigits="1" />%</td>
 						</tr>
-					</c:forEach>
 				</tbody>
 			</table>
 

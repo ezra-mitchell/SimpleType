@@ -2,6 +2,7 @@ package com.afs.ezra.simpletype.webapp.themes;
 
 import javax.validation.Valid;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,30 +22,33 @@ public class ThemeController {
 	private final ThemeManager manager;
 
 	@GetMapping("/themes/{themeName}")
-	public ResponseEntity<ThemeDto> getTheme(@PathVariable String themeName) {
-		return manager.getTheme(themeName);
+	public ResponseEntity<ThemeView> getTheme(@PathVariable String themeName) {
+		return ResponseEntity.ok(manager.getTheme(themeName));
 	}
 
 	@GetMapping("/themes/list")
 	public ResponseEntity<String[]> getAvailableThemes() {
-		return manager.getAllThemes();
+		return ResponseEntity.ok(manager.getAllThemes());
 	}
 
 	@DeleteMapping("/themes/{themeName}")
 	public ResponseEntity<Void> deleteTheme(@PathVariable String themeName) {
-		return manager.deleteTheme(themeName);
+		HttpStatus status = manager.deleteTheme(themeName);
+		return new ResponseEntity<Void>(status);
 	}
 
 	@PostMapping("/themes")
-	public ResponseEntity<Void> createTheme(@RequestBody @Valid ThemeDto themeDto) {
-		return manager.saveTheme(themeDto);
+	public ResponseEntity<Void> createTheme(@RequestBody @Valid ThemeView theme) {
+		HttpStatus status = manager.saveTheme(theme);
+		return new ResponseEntity<Void>(status);
 	}
 
 	@PutMapping("/themes")
-	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeDto themeDto) {
-		return manager.updateTheme(themeDto);
+	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeView theme) {
+		HttpStatus status = manager.updateTheme(theme);
+		return new ResponseEntity<Void>(status);
 	}
-	
+
 	@GetMapping("/themes/editor")
 	public ModelAndView themeEditor() {
 		return new ModelAndView("theme-editor");
