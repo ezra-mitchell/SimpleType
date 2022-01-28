@@ -1,4 +1,4 @@
-package com.afs.ezra.simpletype.provider.themes.model.serilization;
+package com.afs.ezra.simpletype.provider.themes.model.serialization;
 
 import java.awt.Color;
 import java.io.IOException;

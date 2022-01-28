@@ -1,4 +1,4 @@
-package com.afs.ezra.simpletype.provider.leaderboard;
+package com.afs.ezra.simpletype.provider.leaderboard.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class TypedCharacterDTO {
+public class TypedCharacter {
 
 	private Character character;
 	private Character typed;

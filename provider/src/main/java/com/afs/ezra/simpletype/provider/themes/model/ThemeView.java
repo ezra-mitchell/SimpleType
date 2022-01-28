@@ -7,6 +7,8 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.beans.BeanUtils;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -36,19 +38,27 @@ public class ThemeView implements Theme {
 	private String name;
 	private Long id;
 	@NotNull
+	@JsonProperty("--c-bg-main")
 	private Color backgroundMain;
 	@NotNull
+	@JsonProperty("--c-bg-secondary")
 	private Color backgroundSecondary;
 	@NotNull
+	@JsonProperty("--c-accent")
 	private Color accent;
 	@NotNull
+	@JsonProperty("--c-accent-light")
 	private Color accentLight;
 	@NotNull
+	@JsonProperty("--c-neutral")
 	private Color neutral;
 	@NotNull
+	@JsonProperty("--c-not-typed")
 	private Color notTyped;
 	@NotNull
+	@JsonProperty("--c-error")
 	private Color error;
 	@NotNull
+	@JsonProperty("--c-correct")
 	private Color correct;
 }

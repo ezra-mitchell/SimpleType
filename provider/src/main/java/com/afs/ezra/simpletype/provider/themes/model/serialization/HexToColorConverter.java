@@ -1,4 +1,4 @@
-package com.afs.ezra.simpletype.provider.themes.model.serilization;
+package com.afs.ezra.simpletype.provider.themes.model.serialization;
 
 import java.awt.Color;
 import java.io.IOException;
@@ -15,6 +15,15 @@ public class HexToColorConverter extends JsonDeserializer<Color> {
 
 	@Override
 	public Color deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JacksonException {
-		return new Color(Integer.valueOf(p.getValueAsString().replaceAll("#", "").replaceAll(" ", ""), 16));
+		String hex = p.getValueAsString().replace("#", "").replace(" ", "");
+		if(hex.length() == 3) {
+			StringBuilder sb = new StringBuilder();
+			for(int i = 0; i < 3; i++) {
+				sb.append(hex.charAt(i));
+				sb.append(hex.charAt(i));
+			}
+			hex = sb.toString();
+		}
+		return new Color(Integer.valueOf(hex, 16));
 	}
 }

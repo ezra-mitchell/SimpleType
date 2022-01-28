@@ -1,4 +1,4 @@
-package com.afs.ezra.simpletype.provider.leaderboard;
+package com.afs.ezra.simpletype.provider.leaderboard.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +19,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
-public class LeaderboardPlace {
+public class LeaderboardPlaceImpl implements LeaderboardPlace{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -32,4 +32,5 @@ public class LeaderboardPlace {
 	
 	@Column(nullable = false)
 	private Double accuracy;
+
 }
