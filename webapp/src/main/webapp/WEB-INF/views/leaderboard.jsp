@@ -91,11 +91,11 @@ tbody tr:last-of-type {
 				</thead>
 				<tbody>
 						<tr>
-							<td id="place">${placement.place}</td>
+							<td>${placement.place}</td>
 							<td>${placement.name}</td>
-							<td id="wpm"><fmt:formatNumber value="${placement.speed}" type="number"
+							<td><fmt:formatNumber value="${placement.speed}" type="number"
 									maxFractionDigits="1" /> wpm</td>
-							<td id="accuracy"><fmt:formatNumber value="${placement.accuracy}" type="number"
+							<td><fmt:formatNumber value="${placement.accuracy}" type="number"
 									maxFractionDigits="1" />%</td>
 						</tr>
 				</tbody>

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.afs.ezra.simpletype.provider.common.HttpException;
 import com.afs.ezra.simpletype.provider.themes.model.ThemeView;
 import com.afs.ezra.simpletype.provider.themes.service.ThemeService;
 
@@ -26,7 +25,7 @@ public class ThemeController {
 	private final ThemeService themeService;
 
 	@GetMapping("/themes/{themeName}")
-	public ResponseEntity<ThemeView> getTheme(@PathVariable String themeName) throws HttpException {
+	public ResponseEntity<ThemeView> getTheme(@PathVariable String themeName) {
 		return ResponseEntity.ok(themeService.getTheme(themeName));
 	}
 
@@ -48,7 +47,7 @@ public class ThemeController {
 	}
 
 	@PutMapping("/themes")
-	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeView themeDto) throws HttpException {
+	public ResponseEntity<Void> updateTheme(@RequestBody @Valid ThemeView themeDto) {
 		themeService.updateTheme(themeDto);
 		return ResponseEntity.ok(null);
 	}
