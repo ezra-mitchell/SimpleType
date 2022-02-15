@@ -110,20 +110,20 @@ input[type="submit"]:hover{
 		<div>
 			<h2>{{ctrl.currentTime}}</h2>
 			<div class="typing-pane" ng-keydown="ctrl.onKeyPress($event)" ng-cloak
-				tabindex="-1" id="typing-test" autofocus >
+				tabindex="-1" autofocus>
 				<span class="skeleton-text" ng-show="ctrl.loading" > </span>	
-				<span ng-repeat="charObj in ctrl.text" ng-class="charObj.class" class="test-char">{{charObj.character}}</span>
+				<span ng-repeat="charObj in ctrl.text" ng-class="charObj.class">{{charObj.character}}</span>
 			</div>
 			<p class="author" align="right">{{ctrl.author}}</p>
 
 			<p class="sub-text" ng-click="ctrl.getTest()">Shift Tab for new test</p>
 
-			<form action="/leaderboard" method="post" id="test-form">
+			<form action="/leaderboard" method="post">
 				<input type="text" name="name" required id="name" placeholder="Name" ng-class="{closed: ctrl.finished === false}">
 				<input type="number" name="age" id="age" placeholder="Age" ng-class="{closed: ctrl.finished === false}">
 				<input type="hidden" name="text[]" value="{{ctrl.text}}" ng-if-start="ctrl.finished === true"> 
 				<input type="hidden" name="errors[]" value="{{ctrl.errors}}" ng-if-end> 
-				<input type="submit" value="Submit to leaderboard" ng-class="{closed: ctrl.finished === false}" id="test-form-submit">
+				<input type="submit" value="Submit to leaderboard" ng-class="{closed: ctrl.finished === false}">
 			</form>
 
 		</div>

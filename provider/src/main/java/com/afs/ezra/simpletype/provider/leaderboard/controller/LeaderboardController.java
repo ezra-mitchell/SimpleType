@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.afs.ezra.simpletype.provider.common.HttpException;
 import com.afs.ezra.simpletype.provider.leaderboard.model.LeaderboardPlaceView;
 import com.afs.ezra.simpletype.provider.leaderboard.model.TypingTest;
 import com.afs.ezra.simpletype.provider.leaderboard.service.LeaderboardService;
@@ -27,7 +26,7 @@ public class LeaderboardController {
 
 	@PostMapping("/leaderboard")
 	public ResponseEntity<LeaderboardPlaceView> postLeaderboardScore(@RequestBody TypingTest testData)
-			throws JsonParseException, JsonMappingException, IOException, HttpException {
+			throws JsonParseException, JsonMappingException, IOException {
 
 		LeaderboardPlaceView place = leaderboardService.postLeaderboardScore(testData);
 
@@ -36,7 +35,7 @@ public class LeaderboardController {
 
 	@GetMapping("/leaderboard/{size}")
 	public ResponseEntity<List<LeaderboardPlaceView>> getTopLeaderboard(
-			@PathVariable(name = "size", required = true) Integer size) throws HttpException {
+			@PathVariable(name = "size", required = true) Integer size) {
 		return ResponseEntity.ok(leaderboardService.getTopLeaderboard(size));
 	}
 

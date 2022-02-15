@@ -3,18 +3,14 @@ package com.afs.ezra.simpletype.provider.leaderboard.model;
 import org.springframework.beans.BeanUtils;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode
-@ToString
 public class LeaderboardPlaceView implements LeaderboardPlace{
 
 	private Long place;
