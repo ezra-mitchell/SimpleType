@@ -24,19 +24,20 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.afs.ezra.simpletype.webapp.leaderboard.LeaderboardManager;
+import com.afs.ezra.simpletype.webapp.leaderboard.LeaderboardPlaceView;
 import com.afs.ezra.simpletype.webapp.leaderboard.TypingTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
 @ActiveProfiles("test")
-class TypingControllerTest extends AbstractTestNGSpringContextTests{
+class TypingControllerTest extends AbstractTestNGSpringContextTests {
 
 	private WebDriver driver;
 
 	@Autowired
 	LeaderboardManager leaderboardManager;
-	
+
 	@Autowired
 	TypingService typingService;
 
@@ -55,14 +56,14 @@ class TypingControllerTest extends AbstractTestNGSpringContextTests{
 	public void afterTest() {
 		driver.close();
 	}
-	
+
 	@Test
 	void pageGetsTypingTest() {
 		when(typingService.getTypingTest()).thenReturn(new TypingTestModel("", new String[] {}, "words", "", "", 5));
 		driver.get(baseUrl + "/home");
 
 		WebDriverWait wait = new WebDriverWait(driver, 1);
-		
+
 		wait.until(ExpectedConditions.numberOfElementsToBe(By.className("test-char"), 5));
 	}
 
@@ -72,9 +73,9 @@ class TypingControllerTest extends AbstractTestNGSpringContextTests{
 		driver.get(baseUrl + "/home");
 
 		driver.findElement(By.id("typing-test")).sendKeys("words");
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 1);
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-form-submit")));
 
 	}
@@ -85,15 +86,29 @@ class TypingControllerTest extends AbstractTestNGSpringContextTests{
 		driver.get(baseUrl + "/home");
 
 		driver.findElement(By.id("typing-test")).sendKeys("words");
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 1);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("name")));
+
+		LeaderboardPlaceView view = new LeaderboardPlaceView();
+		view.setAccuracy(99.9);
+		view.setSpeed(60.0);
+		view.setName("name");
+		view.setPlace(1L);
+
+		when(leaderboardManager.postLeaderboardScore(any())).thenReturn(view);
+		when(leaderboardManager.getTopLeaderboard(10)).thenReturn(new LeaderboardPlaceView[] { view });
 
 		driver.findElement(By.id("name")).sendKeys("name");
 		driver.findElement(By.id("test-form-submit")).click();
 
 		ArgumentCaptor<TypingTest> testCaptor = ArgumentCaptor.forClass(TypingTest.class);
 		verify(leaderboardManager, times(1)).postLeaderboardScore(testCaptor.capture());
+		
+		
+		wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("wpm")), "60 wpm"));
+		wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("accuracy")), "99.9%"));
+		wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.id("place")), "1"));
 	}
 
 	@Test
@@ -103,7 +118,7 @@ class TypingControllerTest extends AbstractTestNGSpringContextTests{
 		driver.get(baseUrl + "/home");
 		driver.findElement(By.id("typing-test")).sendKeys("words");
 		WebDriverWait wait = new WebDriverWait(driver, 1);
-		
+
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("test-form")));
 
 		verify(leaderboardManager, times(0)).postLeaderboardScore(any());
